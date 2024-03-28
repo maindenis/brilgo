@@ -1,0 +1,744 @@
+@charset "utf-8";
+
+/*------------------*/
+/*-- Fonts --*/
+/*------------------*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.eot');
+    src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Medium.woff2') format('woff2'),
+        url('fonts/Roboto-Medium.woff') format('woff'),
+        url('fonts/Roboto-Medium.ttf') format('truetype'),
+        url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.eot');
+    src: url('fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('fonts/Montserrat-Medium.woff') format('woff'),
+        url('fonts/Montserrat-Medium.ttf') format('truetype'),
+        url('fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Varela Round';
+    src: url('fonts/VarelaRound-Regular.eot');
+    src: url('fonts/VarelaRound-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/VarelaRound-Regular.woff2') format('woff2'),
+        url('fonts/VarelaRound-Regular.woff') format('woff'),
+        url('fonts/VarelaRound-Regular.ttf') format('truetype'),
+        url('fonts/VarelaRound-Regular.svg#VarelaRound-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype'),
+        url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*-------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
+
+::-webkit-input-placeholder {color:#555555;}
+::-moz-placeholder          {color:#555555;}
+:-moz-placeholder           {color:#555555;}
+:-ms-input-placeholder      {color:#555555;}
+
+input,
+textarea,
+button,
+select,
+a,
+img {
+    outline: none;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance;
+    text-indent: 0.01px;
+    text-overflow: "";
+}
+
+*::-ms-expand { display: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    -webkit-appearance: none;
+    -moz-appearance;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
+
+.clearfix:after,
+.clearfix:before {
+    display: block;
+    content: "";
+}
+
+/*-------------------------------------------*/
+/* ----- DEFAULT STYLES ------ */
+/*-------------------------------------------*/
+
+section {
+    position: relative;
+    padding: 10px 0;
+}
+
+h1 {
+/*    font-family: 'Varela Round';
+    font-weight: normal;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 0.3px;*/
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+}
+
+img {
+    outline: none;
+    border: 1px solid transparent;
+    border: none;
+}
+
+button:hover,
+button:active,
+a:hover,
+a:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+
+}
+
+input:focus {
+
+}
+
+textarea {
+
+}
+
+textarea:focus {
+
+}
+
+/*-------------------------------------------*/
+/* ----- REUSABLE COMPONENTS ------ */
+/*-------------------------------------------*/
+
+.row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.overflow_wrapp {
+    overflow: hidden;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.align_left {
+    text-align: left;
+}
+
+/*-------------------------------------------*/
+/* ----- CONTENT ------ */
+/*-------------------------------------------*/
+
+.top_box {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.top_text {
+    padding: 1px 0 6px 0;
+    text-align: center;
+}
+
+.top_text p {
+    color: #005BEA;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .3px;
+}
+
+.h1_wrapp {
+    text-align: center;
+}
+
+.h1_wrapp h1 {
+    padding: 15px 0;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 0.3px;
+}
+
+.h1_wrapp p {
+    padding: 15px 0;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.h1_wrapp h1 span {
+    font-weight: bolder;
+    color: #6a11cb;
+}
+
+.two_cols {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 29px 0 26px 0;
+}
+
+.two_cols > div:nth-child(1) {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+
+.two_cols > div:nth-child(2) {
+    width: 50%;
+    padding: 10px 0 10px 10px;
+}
+
+.items_header {
+    padding: 21px 0 2px 0;
+    text-align: center;
+}
+
+.items_header h2 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: #6a11cb;
+}
+
+.items_header h2 span {
+    font-weight: bold;
+}
+
+.items {
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.item > div:nth-child(1) {
+    width: 72px;
+}
+
+.item > div:nth-child(2) {
+    width: calc(100% - 72px);
+}
+
+.item h3 {
+    margin-top: .5rem;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #6a11cb;
+    text-transform: capitalize;
+}
+
+.item p {
+    color: #3d4459;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.item > div:nth-child(1) img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 62px;
+    max-width: 40px;
+}
+
+.item.bonus_item {
+    align-items: flex-start;
+}
+
+.item.bonus_item > div:nth-child(1) img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.quiz_box {
+    border: 2px dotted #6a11cb;
+    border-radius: 20px;
+    padding: 20px 10px 27px 10px;
+}
+
+.quiz_header {
+    text-align: center;
+}
+
+.quiz_header h3 {
+    color: #6a11cb;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.quiz_header h3 span {
+    font-weight: bolder;
+}
+
+.quiz_box .inner {
+    max-width: 371px;
+    margin: 0 auto;
+}
+
+.steps_bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 4px 0;
+}
+
+.steps_bar:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c2cbd2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #aaaeb5;
+    position: relative;
+    z-index: 2;
+    border: 10px solid #fff;
+}
+
+.circle.blue {
+    background: #6a11cb;
+}
+
+.circle.active {
+    background: #fff;
+    color: #6a11cb;
+}
+
+.circle.active:before {
+    display: block;
+    content: "";
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 1px solid #6a11cb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle p {
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto";
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.circle.active p {
+    color: #6a11cb;
+}
+
+.steps_wrapp {
+    margin: 7px 0 1px 0;
+    position: relative;
+}
+
+.step {
+    position: absolute;
+    top: 0;
+    left: -99999999px;
+    opacity: 0;
+}
+
+.step.active {
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.step_title {
+    padding: 8px 0;
+}
+
+.step_title h3 {
+    color: #7a7a7a;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 19px;
+    line-height: 120%;
+}
+
+.radios {
+
+}
+
+.step_radio {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 3px 0;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.step_radio input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.r_circle {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #3C3C3CD1;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.step_radio input:checked + .r_circle {
+    border: 1px solid #0693e3;
+}
+
+.step_radio input:checked + .r_circle:before {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #0693e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio_text {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    color: #3C3C3CD1;
+}
+
+.radio_text span {
+    font-weight: bolder;
+}
+
+.quiz_controls {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -2px;
+}
+
+.quiz_controls > div {
+    padding: 2px;
+}
+
+.grey_pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #AAAEB5;
+    border: none;
+    color: #FFF;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.grey_pill:hover {
+    background-color: #AAAEB5A6;
+}
+
+.blue_pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #6A11CB;
+    border: none;
+    color: #FFF;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 16px;
+    border-radius: 30px;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.blue_pill:hover {
+    background-color: #005BEA;
+}
+
+.quiz_footer {
+    text-align: center;
+}
+
+.quiz_footer p {
+    color: #02010170;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.quiz_footer p a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #919191;
+}
+
+
+
+/*-------------------------------------------*/
+/* ----- FOOTER ------ */
+/*-------------------------------------------*/
+
+footer {
+
+}
+
+.footer_section {
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 12px 0 25px 0;
+}
+
+.footer_section p {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c9c9c9;
+}
+
+.footer_section p b {
+
+}
+
