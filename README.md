@@ -3,3 +3,4 @@
 # https://maindenis.github.io/brilgo/step_3.html
 # https://maindenis.github.io/brilgo/step_4.html
 # https://maindenis.github.io/brilgo/step_5.html
+# https://maindenis.github.io/brilgo/rekomendacii.html

@@ -714,7 +714,78 @@ textarea:focus {
     color: #919191;
 }
 
+.res_box {
+    border: 2px dotted #6a11cb;
+    border-radius: 20px;
+    margin: 30px 0;
+    padding: 20px 30px 27px 30px;
+}
 
+.res_item {
+    position: relative;
+    padding: 10px 0 10px 50px;
+}
+
+.hand {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/hand.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fire {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/fire.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hand_down {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/hand_down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.res_item .hand {
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+.res_item p {
+    color: #3d4459;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.res_box > p {
+    padding: 10px 0;
+    color: #3d4459;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.btn_wrapp_2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.btn_wrapp_2 .blue_pill {
+    min-height: 50px;
+}
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
