@@ -459,6 +459,7 @@ textarea:focus {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin: 0 -20px;
     padding: 4px 0;
 }
 
@@ -476,13 +477,13 @@ textarea:focus {
 .circle {
     display: flex;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #aaaeb5;
     position: relative;
     z-index: 2;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
 }
 
 .circle.blue {
@@ -717,19 +718,19 @@ textarea:focus {
 .res_box {
     border: 2px dotted #6a11cb;
     border-radius: 20px;
-    margin: 30px 0;
-    padding: 20px 30px 27px 30px;
+/*    margin: 30px 0;*/
+    padding: 20px 30px 27px 10px;
 }
 
 .res_item {
     position: relative;
-    padding: 10px 0 10px 50px;
+    padding: 5px 0 5px 30px;
 }
 
 .hand {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-image: url(img/hand.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -764,12 +765,12 @@ textarea:focus {
 .res_item p {
     color: #3d4459;
     font-family: "Montserrat", Sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.4em;
 }
 
-.res_box > p {
+.info_box > p {
     padding: 10px 0;
     color: #3d4459;
     font-family: "Montserrat", Sans-serif;
@@ -786,6 +787,74 @@ textarea:focus {
 .btn_wrapp_2 .blue_pill {
     min-height: 50px;
 }
+
+.form_inputs {
+
+}
+
+.input_wrapp {
+    margin: 4px 0;
+}
+
+.input_wrapp input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 1rem;
+    background-color: #fafafa;
+    border-color: #0201011F;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    line-height: 39px;
+    font-weight: normal;
+    color: #5D6680;
+}
+
+.contacts_rradios_sect {
+
+}
+
+.title_2 {
+    padding: 4px 0;
+}
+
+.title_2 h3 {
+    color: #02010180;
+    font-weight: 500;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 19px;
+    line-height: 120%;
+}
+
+.contacts_rradios {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -3px;
+}
+
+.contacts_rradios > div {
+    padding: 5px 3px;
+}
+
+.submit_wrapp {
+    padding: 3px 0 10px;
+    text-align: center;
+}
+
+#phone {
+    width: 100% !important;
+}
+
+.iti {
+    width: 100% !important;
+}
+
+.info_box_2 p {
+    padding: 2px 0;
+}
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

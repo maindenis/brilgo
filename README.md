@@ -1,6 +1,14 @@
+шаг 1
 # https://maindenis.github.io/brilgo/index.html
+шаг 2
 # https://maindenis.github.io/brilgo/step_2.html
+шаг 3
 # https://maindenis.github.io/brilgo/step_3.html
+шаг 4
 # https://maindenis.github.io/brilgo/step_4.html
+шаг 5
 # https://maindenis.github.io/brilgo/step_5.html
-# https://maindenis.github.io/brilgo/rekomendacii.html
+шаг 6
+# https://maindenis.github.io/brilgo/step_6.html
+шаг 7
+# https://maindenis.github.io/brilgo/step_7.html
